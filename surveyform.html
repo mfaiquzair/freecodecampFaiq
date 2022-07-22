@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="surveyform.css"/>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Passion/Interest Survey Form Faiq</h1>
+            <p>Please fill in the form.</p> 
+        </header>
+        <form id="survey-form">
+            <div class="form-group"> <!-- div for name--> 
+              <label id="name-label" for="name">Name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form-control"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+            <div class="form-group"> <!-- div for email-->
+              <label id="email-label" for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Enter your Email"
+                required
+              />
+            </div>
+            <div class="form-group"> <!-- div for age-->
+              <label id="number-label" for="number"
+                >Age</label
+              >
+              <input
+                type="number"
+                name="age"
+                id="number"
+                min="10"
+                max="99"
+                class="form-control"
+                placeholder="Age"
+              />
+            </div>
+            <div class="form-group"> <!--div for dropdown-->
+              <p>Which option best describe you?</p>
+              <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Select current role</option>
+                <option value="student">Student</option>
+                <option value="job">Full Time Job</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+    
+            <div class="form-group"> <!--div for radio button-->
+              <p>How would you prefer to be contacted?</p>
+              <label>
+                <input
+                  name="user-recommend"
+                  value="definitely"
+                  type="radio"
+                  class="input-radio"
+                  checked
+                />Email</label
+              >
+              <label>
+                <input
+                  name="user-recommend"
+                  value="maybe"
+                  type="radio"
+                  class="input-radio"
+                />Phone Call</label
+              >
+    
+              <label
+                ><input
+                  name="user-recommend"
+                  value="not-sure"
+                  type="radio"
+                  class="input-radio"
+                />Text</label
+              >
+
+              <label
+              ><input
+                name="user-recommend"
+                value="not-sure"
+                type="radio"
+                class="input-radio"
+              />Carrier Pigeon</label
+            >
+            </div>    
+    
+            <div class="form-group"> <!--div for checkbox-->
+              <p>
+                What are you interested in learning?
+                <span class="clue">(Check all that apply)</span>
+              </p>
+    
+              <label
+                ><input
+                  name="prefer"
+                  value="front-end-projects"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Front-end Projects</label
+              >
+              <label>
+                <input
+                  name="prefer"
+                  value="back-end-projects"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Back-end Projects</label
+              >
+              <label
+                ><input
+                  name="prefer"
+                  value="data-analytics"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Data Analytics</label
+              >
+              <label
+                ><input
+                  name="prefer"
+                  value="adobe"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Adobe</label
+              >
+              <label
+                ><input
+                  name="prefer"
+                  value="cyber-security"
+                  type="checkbox"
+                  class="input-checkbox"
+                />Cyber Security</label
+              >
+            </div>
+    
+            <div class="form-group"> <!--div for textarea-->
+              <p>Any questions or upcomig issues?</p>
+              <textarea
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Write it here..."
+              ></textarea>
+            </div>
+    
+            <div class="form-group"> <!--div for submit button-->
+              <button type="submit" id="submit" class="submit-button">
+                Submit
+              </button>
+            </div>
+          </form>
+    </div>
+    
+</body>
+</html>
